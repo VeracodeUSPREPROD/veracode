@@ -85,7 +85,7 @@ jobs:
         path: 'source-code'
 
     - id: run-fix-sca
-      uses: veracode/veracode-fix-for-sca@SFIX-3327
+      uses: veracode/veracode-fix-for-sca@v0.1.9
       env:
         # QA Stage 107 credentials for fix operations (fix-sca only uses API credentials, not SRCCLR token)
         VERACODE_API_KEY_ID: '${{ secrets.VERACODE_PREPROD_API_ID }}'
